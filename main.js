@@ -42,7 +42,7 @@ async function conversor() {
 
         document.getElementById("resultado").textContent = 
             `💰 €${valorEmEuros.toFixed(2)} = R$${valorEmReais.toFixed(2)} (cotação API: ${taxaDeCambio}) 
-            Precisa usar tudo isso mesmo, meu amorzinho? Hahaha`;
+                              Precisa usar tudo isso mesmo, meu amorzinho? Hahaha`;
 
     } catch (error) {
         console.error("Erro ao obter taxa de câmbio:", error);
