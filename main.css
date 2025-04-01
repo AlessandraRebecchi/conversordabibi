@@ -53,8 +53,14 @@ button:hover {
   background-color: #1ABC9C;
 }
 
+  p {
+    font-size: 45 px;
+    font-weight: bolder;
+  }
+  
 /* Footer Styles */
 footer {
   text-align: center;
   padding: 10px;
 }
+
