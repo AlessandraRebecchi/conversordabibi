@@ -19,12 +19,18 @@ body {
 
 /* Container with the background image */
 .container {
-  background: url('./Imagens/brasilealemanha.jpg') no-repeat center center/cover;
+  background: url('./Imagens/brasilealemanha.jpg') no-repeat center center;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover; /* Faz a imagem cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetições */
+  background-attachment: scroll; /* Melhor para dispositivos móveis */
 }
+
+
 
 /* Content div for text and button */
 .content {
@@ -54,13 +60,30 @@ button:hover {
 }
 
   p {
-    font-size: 45 px;
     font-weight: bolder;
   }
+
+  @media (max-width: 768px) {
+    .container {
+      background-size: contain; /* Ajusta para evitar cortes */
+      background:  url(./Imagens/brasilealemanha-cel.jpg);
+    }
   
+    .content {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    p {
+      font-size: 24px; /* Reduz o tamanho da fonte */
+    }
+  }
+  
+
 /* Footer Styles */
 footer {
   text-align: center;
+  background-color: #ff1b7b;
   padding: 10px;
 }
 
