@@ -15,7 +15,7 @@ async function conversor() {
     valorEmEuros = parseFloat(valorEmEuros);
 
     if (isNaN(valorEmEuros) || valorEmEuros <= 0) {
-        document.getElementById("resultado").textContent = "❌ Digite um valor válido, mein Freund!";
+        document.getElementById("resultado").textContent = "❌ Digite um valor válido, capivara do meu coração!";
         return;
     }
 
@@ -45,7 +45,7 @@ async function conversor() {
 
         document.getElementById("resultado").textContent = 
             `💰 €${valorEmEuros.toFixed(2)} = R$${valorEmReais.toFixed(2)} (cotação API: ${taxaDeCambio}) 
-            Precisa usar tudo isso mesmo, mein Freund? Hahaha`;
+            Precisa usar tudo isso mesmo, meu amorzinho? Hahaha`;
 
     } catch (error) {
         console.error("Erro ao obter taxa de câmbio:", error);
